@@ -8,7 +8,7 @@ spec:
   releaseName: telegram-kbot-go
   chart:
     spec:
-      chart: ./chart
+      chart: ./helm
       sourceRef:
         kind: GitRepository
         name: telegram-kbot-go
