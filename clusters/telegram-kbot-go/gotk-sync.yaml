@@ -1,0 +1,13 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: telegram-kbot-go
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  url: https://github.com/artur-nikitenko/telegram-kbot-go.git
+  ref:
+    branch: develop
+  ignore: |
+    /*
+    !/chart/

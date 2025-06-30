@@ -1,0 +1,20 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: telegram-kbot-go
+  namespace: flux-system
+spec:
+  interval: 1m
+  releaseName: telegram-kbot-go
+  chart:
+    spec:
+      chart: ./chart
+      sourceRef:
+        kind: GitRepository
+        name: telegram-kbot-go
+        namespace: flux-system
+      interval: 1m
+  values:
+    image:
+      repository: ghcr.io/artur-nikitenko/telegram-kbot-go
+      tag: v1.1.2-3b61af2-linux-amd64
