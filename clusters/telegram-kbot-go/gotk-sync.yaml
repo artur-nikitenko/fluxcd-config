@@ -10,5 +10,4 @@ spec:
     branch: develop
   ignore: |
     /*
-    !/helm/
-    !/helm/**/*
+    !/charts/
