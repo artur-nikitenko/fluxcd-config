@@ -16,5 +16,4 @@ spec:
       interval: 1m
   values:
     image:
-      repository: ghcr.io/artur-nikitenko/telegram-kbot-go
       tag: v1.1.2-3b61af2-linux-amd64
